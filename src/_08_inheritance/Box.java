@@ -8,6 +8,7 @@ public class Box {
 
 
     Box(){
+        System.out.println("default constructor");
         this.l = -1;
         this.h = -1;
         this.w = -1;
@@ -15,13 +16,14 @@ public class Box {
 
     //cube
     Box(double side){
+        super();
         this.l = side;
         this.h = side;
         this.w = side;
     }
 
     Box(double l, double w, double h){
-        System.out.println("Box class constructor");
+        System.out.println("parameterized constructor");
         this.l = l;
         this.w = w;
         this.h = h;

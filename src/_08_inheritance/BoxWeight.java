@@ -3,6 +3,7 @@ package _08_inheritance;
 public class BoxWeight extends Box{
     double weight;
 
+
     BoxWeight(){
         this.weight = -1;
 //        this.l these says error bcz l is private in parent class (anything is private can only be used in that same class)
@@ -17,7 +18,7 @@ public class BoxWeight extends Box{
 
 
     BoxWeight(double l, double w, double h, double weight){
-        super(l, w, h); //call the parent class constructor OR used to initialize values present in parent class
+        //super(l, w, h); //call the parent class constructor OR used to initialize values present in parent class
         this.weight = weight;
 
 //        System.out.println(super.weight); //we can use super.weight incase there is variable named weight present in both the parent and child class
