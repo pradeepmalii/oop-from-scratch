@@ -1,0 +1,20 @@
+package _12_abstraction;
+
+public class Daughter extends Parent{
+
+    Daughter(int age){
+        super(age);
+    }
+
+    @Override
+    void career()
+    {
+        System.out.println("I am going to be doctor");
+    }
+
+    @Override
+    void partner()
+    {
+        System.out.println("I love Ram");
+    }
+}
