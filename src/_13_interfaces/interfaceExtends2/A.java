@@ -1,0 +1,14 @@
+package _13_interfaces.interfaceExtends2;
+
+public interface A {
+
+    //static interface methods should always have a body
+    //call via the iterface name
+    static void greeting() {
+        System.out.println("Hey i am static method");
+    }
+
+    default void fun() {
+        System.out.println("I am in A");
+    }
+}
